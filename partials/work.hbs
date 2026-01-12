@@ -10,12 +10,13 @@
       {{#each resume.work}}
         <div class='job-block'>
           <div class='block-header'>
-            <span class='organization'>{{name}}</span>
-            <span class='title'>{{position}}</span>
-            <span class='date'>
+            <div>
+              <span class='organization'>{{name}}</span> | <span class='title'>{{position}}</span>
+            </div>
+            <div class='date'>
               <time datetime="{{startDate}}">{{MONTH_YEAR startDate}}</time> &mdash;
               {{#if endDate}}<time datetime="{{endDate}}">{{MONTH_YEAR endDate}}</time>{{else}}Present{{/if}}
-            </span>
+            </div>
           </div>
 
           <div class='display-none'>

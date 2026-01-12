@@ -1,8 +1,38 @@
-# jsonresume-theme-straightforward
+# jsonresume-theme-straightforward (Modified Fork)
 
-A straightforward [jsonresume](https://github.com/jsonresume) theme. 
+A straightforward [jsonresume](https://github.com/jsonresume) theme.
 
-Fork freely, make it your own.
+**Note:** This is a fork of the original [jsonresume-theme-straightforward](https://github.com/slugstack/jsonresume-theme-straightforward) with some modifications and personal preferences.
+
+## Preview
+
+![Sample Resume](.img/new_straightforward_sample.png)
+
+## Changes from Original
+
+### Header/Basics Section
+
+- Centered layout with name at the top
+- Contact information (phone, email, social profiles) in a single centered line
+- SVG icons for phone, email, LinkedIn, and GitHub
+- Social profiles display actual URLs (e.g., `linkedin.com/in/username`) instead of platform names
+- Location only shows comma when city is present
+
+### Work Experience Section
+
+- Two-line header layout:
+  - Line 1: `Organization | Title`
+  - Line 2: `Date range`
+
+### Print/PDF
+
+- Job blocks avoid splitting when possible
+- Orphan/widow control for better page breaks
+
+### Icon Support
+
+- Supports custom SVG icons in the `icons/` folder
+- Icons are inlined for portability
 
 ## examples
 
