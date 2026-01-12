@@ -66,6 +66,43 @@ A straightforward [jsonresume](https://github.com/jsonresume) theme with adaptiv
 
 ## usage
 
+### Using resume-cli (Recommended)
+
+Install resume-cli globally and the theme:
+
+```sh
+npm install -g resume-cli
+npm install jsonresume-theme-straightforward-fet-adapt
+```
+
+Then export your resume:
+
+```sh
+# Export as PDF
+resume export resume.pdf --theme straightforward-fet-adapt
+
+# Export as HTML
+resume export resume.html --theme straightforward-fet-adapt
+
+# Serve locally for preview
+resume serve --theme straightforward-fet-adapt
+```
+
+### Using Local Installation
+
+Clone or download this repository, then:
+
+```sh
+npm install
+npm start  # Serves locally at http://localhost:4000
+
+# Export locally
+npm run export:html  # Generates docs/index.html
+npm run export:pdf   # Generates docs/index.pdf
+```
+
+### Using as npm Package (Legacy)
+
 ```sh
 npm install jsonresume-theme-straightforward-fet-adapt
 
