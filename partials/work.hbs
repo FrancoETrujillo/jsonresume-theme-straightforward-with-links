@@ -9,15 +9,27 @@
     <div class='section-content'>
       {{#each resume.work}}
         <div class='job-block'>
-          <div class='block-header'>
-            <div>
-              <span class='organization'>{{name}}</span> | <span class='title'>{{position}}</span>
+          {{#if highlights.length}}
+            <div class='block-header'>
+              <div>
+                <span class='organization'>{{name}}</span> | <span class='title'>{{position}}</span>
+              </div>
+              <div class='date'>
+                <time datetime="{{startDate}}">{{MONTH_YEAR startDate}}</time> &mdash;
+                {{#if endDate}}<time datetime="{{endDate}}">{{MONTH_YEAR endDate}}</time>{{else}}Present{{/if}}
+              </div>
             </div>
-            <div class='date'>
-              <time datetime="{{startDate}}">{{MONTH_YEAR startDate}}</time> &mdash;
-              {{#if endDate}}<time datetime="{{endDate}}">{{MONTH_YEAR endDate}}</time>{{else}}Present{{/if}}
+          {{else}}
+            <div class='block-header'>
+              <div>
+                <span class='organization'>{{name}}</span> | <span class='title'>{{position}}</span>
+                <span class='date'>
+                  <time datetime="{{startDate}}">{{MONTH_YEAR startDate}}</time> &mdash;
+                  {{#if endDate}}<time datetime="{{endDate}}">{{MONTH_YEAR endDate}}</time>{{else}}Present{{/if}}
+                </span>
+              </div>
             </div>
-          </div>
+          {{/if}}
 
           <div class='display-none'>
             {{!-- note: this is to enable any automated parsing of content --}}

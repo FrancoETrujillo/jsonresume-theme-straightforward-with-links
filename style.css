@@ -113,7 +113,9 @@ a {
 }
 
 #work-block .block-header,
-#volunteer .block-header {
+#volunteer .block-header,
+#awards .block-header,
+#publications .block-header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -121,17 +123,25 @@ a {
 }
 
 #work-block .block-header > *,
-#volunteer .block-header > * {
+#volunteer .block-header > *,
+#awards .block-header > *,
+#publications .block-header > * {
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 30%;
 }
 
-#work-block .block-header > div:first-child {
+#work-block .block-header > div:first-child,
+#volunteer .block-header > div:first-child,
+#awards .block-header > div:first-child,
+#publications .block-header > div:first-child {
   flex-basis: 100%;
 }
 
-#work-block .block-header > div.date {
+#work-block .block-header > div.date,
+#volunteer .block-header > div.date,
+#awards .block-header > div.date,
+#publications .block-header > div.date {
   flex-basis: 100%;
   text-align: left;
 }

@@ -1,22 +1,27 @@
 {
-  "name": "jsonresume-theme-straightforward",
+  "name": "jsonresume-theme-straightforward-fet-adapt",
   "private": false,
-  "version": "0.2.0",
-  "description": "a straightforward jsonresume theme",
-  "homepage": "https://github.com/slugstack/jsonresume-theme-straightforward",
+  "version": "1.0.0",
+  "description": "A straightforward jsonresume theme with adaptive layouts and enhanced link support",
+  "homepage": "https://github.com/FrancoETrujillo/jsonresume-theme-straightforward-fet-adapt",
   "bugs": {
-    "url": "https://github.com/slugstack/jsonresume-theme-straightforward/issues"
+    "url": "https://github.com/FrancoETrujillo/jsonresume-theme-straightforward-fet-adapt/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/slugstack/jsonresume-theme-straightforward.git"
+    "url": "https://github.com/FrancoETrujillo/jsonresume-theme-straightforward-fet-adapt.git"
   },
   "license": "MIT",
-  "author": "Aaron Gershman",
+  "author": "Franco Trujillo",
+  "contributors": [
+    "Aaron Gershman (original author)"
+  ],
   "keywords": [
     "jsonresume",
     "theme",
-    "straightforward"
+    "straightforward",
+    "resume",
+    "cv"
   ],
   "files": [
     "index.js",
@@ -44,6 +49,6 @@
     "jest": "^30.0.2",
     "npm-run-all": "^4.1.5",
     "pa11y": "^9.0.0",
-    "resume-cli": "3.1.2"
+    "resume-cli": "^3.1.2"
   }
 }

@@ -8,14 +8,29 @@
     </div>
     <div class='section-content'>
       {{#each resume.awards}}
-        <div class='block-header'>
-          <span class='title'>{{title}}{{#if awarder}}, {{awarder}}{{/if}}</span>
-          {{#if date}}
-            <span class='date'>
-              <time datetime="{{date}}">{{MONTH_YEAR date}}</time>
-            </span>
-          {{/if}}
-        </div>
+        {{#if highlights.length}}
+          <div class='block-header'>
+            <div>
+              <span class='organization'>{{title}}</span>{{#if awarder}} | <span class='title'>{{awarder}}</span>{{/if}}
+            </div>
+            {{#if date}}
+              <div class='date'>
+                <time datetime="{{date}}">{{MONTH_YEAR date}}</time>
+              </div>
+            {{/if}}
+          </div>
+        {{else}}
+          <div class='block-header'>
+            <div>
+              <span class='title'>{{title}}{{#if awarder}}, {{awarder}}{{/if}}</span>
+              {{#if date}}
+                <span class='date'>
+                  <time datetime="{{date}}">{{MONTH_YEAR date}}</time>
+                </span>
+              {{/if}}
+            </div>
+          </div>
+        {{/if}}
         {{#if highlights.length}}
           <ul class='highlights'>
             {{#each highlights}}

@@ -8,14 +8,29 @@
     </div>
     <div class='section-content'>
       {{#each resume.publications}}
-        <div class='block-header'>
-          <span class='title'>{{name}}</span>
-          {{#if releaseDate}}
-            <span class='date'>
-              <time datetime="{{releaseDate}}">{{MONTH_YEAR releaseDate}}</time>
-            </span>
-          {{/if}}
-        </div>
+        {{#if highlights.length}}
+          <div class='block-header'>
+            <div>
+              <span class='organization'>{{name}}</span>
+            </div>
+            {{#if releaseDate}}
+              <div class='date'>
+                <time datetime="{{releaseDate}}">{{MONTH_YEAR releaseDate}}</time>
+              </div>
+            {{/if}}
+          </div>
+        {{else}}
+          <div class='block-header'>
+            <div>
+              <span class='title'>{{name}}</span>
+              {{#if releaseDate}}
+                <span class='date'>
+                  <time datetime="{{releaseDate}}">{{MONTH_YEAR releaseDate}}</time>
+                </span>
+              {{/if}}
+            </div>
+          </div>
+        {{/if}}
         {{#if website}}
           <div class='website'><a href='{{website}}'>{{website}}</a></div>
         {{/if}}
